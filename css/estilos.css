@@ -1,0 +1,390 @@
+@charset "UTF-8";
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: normal; }
+
+h2, h3 {
+  color: #dd7443;
+  text-align: center; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+/* Header */
+header {
+  background-color: rgba(12, 60, 90, 0.952);
+  /* border-bottom: 3px solid rgb(12, 60, 90);*/
+  box-shadow: 0px 1px 5px 0px #0c3c5a;
+  border-radius: 3.5px;
+  /*height: 20vh;*/
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*margin-bottom: 0 !important;*/ }
+
+#logoDesktop {
+  height: 20vh;
+  width: 12.5vw; }
+  #logoDesktop img {
+    height: 100%;
+    width: 100%; }
+
+/**/
+#menuDesktop {
+  width: 87.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*margin-bottom: 0px !important;*/
+  line-height: normal; }
+  #menuDesktop ul {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    padding-left: 0px; }
+    #menuDesktop ul li {
+      list-style-type: none;
+      width: 95px;
+      padding: 5px 10px;
+      box-shadow: 0px 1px 5px 0px lightskyblue;
+      background-color: beige;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #menuDesktop ul li a {
+        text-decoration: none;
+        color: #24667c; }
+
+#menuDesktop li:hover {
+  background-color: #becfe5;
+  transition: 0.5s;
+  text-transform: uppercase; }
+
+/**/
+#menuMobile {
+  display: none;
+  background-color: rgba(12, 60, 90, 0.952);
+  border-bottom: 3px solid #0c3c5a;
+  border-radius: 3px; }
+
+#menuMobile ul {
+  /*display: flex;
+    flex-direction: row;
+    justify-content: center;*/
+  margin-bottom: 0px;
+  padding-left: 0px; }
+  #menuMobile ul li {
+    list-style-type: none;
+    text-align: center;
+    /*display: flex;
+        flex-direction: column;
+        justify-content: center;*/ }
+    #menuMobile ul li ul {
+      display: none; }
+      #menuMobile ul li ul li {
+        background-color: beige;
+        padding: 3px;
+        /*list-style-type: none;*/
+        /*margin: 1px;*/ }
+        #menuMobile ul li ul li a {
+          text-decoration: none;
+          color: #24667c;
+          border-radius: 5px;
+          padding: 3px; }
+
+#menuMobile ul li:hover ul {
+  display: block;
+  /*border-bottom: 3px solid wheat;*/
+  /*border-radius: 3px;*/ }
+
+#menuMobile ul li ul li a:hover {
+  background-color: #becfe5;
+  transition: 0.5s;
+  text-transform: uppercase; }
+
+.imgLogo {
+  height: 20vh;
+  width: 30vw; }
+
+/* Footer */
+footer {
+  background-color: beige;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3px;
+  /*border-top: 2px solid wheat;*/
+  box-shadow: 0px -1px 5px 0px #fad590;
+  border-radius: 3.5px; }
+
+#inst {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.logoCtcu img {
+  height: 100%;
+  width: 125px; }
+
+.logoCamarco img {
+  height: 100%;
+  width: 150px; }
+
+.soMe {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.soMe__iconSoMe img {
+  height: 27px;
+  /*width: 70px;*/ }
+
+.soMe__iconSoMe img:hover {
+  /*filter: drop-shadow(0px 0px 3px darkblue);   */
+  /*background-color: red;*/
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); }
+
+#copyRight {
+  height: 97%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+/* Home */
+#home {
+  height: 60vh;
+  width: 100vw;
+  margin: 1px 0px;
+  /*background-image: url("imagenes/construc5.jpeg");*/
+  background-image: url("../imagenes/construc3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+#badgeMotto {
+  width: 40vw;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px;
+  /*border: 2px solid yellowgreen;*/ }
+
+#badgeMotto:hover {
+  background-color: beige;
+  opacity: 0.7; }
+
+.motto {
+  color: wheat;
+  font-size: 2.5rem;
+  text-align: center;
+  height: 50px;
+  /*border: 1px solid red;*/
+  /*font-style: italic;*/
+  /*padding: 27px;*/
+  /*position: relative;*/
+  /*Solo en casos que haya dos elementos que 
+                            necesitemos superponerlos. En caso de usar
+                            "img" como "background" o un "item hijo" no hace 
+                            falta. En esos casos usamos "opacity"*/
+  /*z-index: 1000;*/ }
+
+#badgeMotto:hover .motto {
+  color: #24667c; }
+
+/* "Servicios" */
+#services {
+  /*border: 2px solid violet;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: auto;
+  height: 1500px; }
+
+.cardServ {
+  background-color: beige;
+  color: rgba(12, 60, 90, 0.952);
+  border: 1px solid rgba(12, 60, 90, 0.952);
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px #0c3c5a;
+  width: 300px;
+  height: 150px; }
+  .cardServ .cardServ__list {
+    display: none; }
+
+.cardServ:hover .cardServ__list {
+  display: block; }
+
+iframe {
+  /*border: 3px solid yellowgreen;*/
+  width: 100vw;
+  height: 1000px; }
+
+/*
+h2 {
+    border: 3px solid yellowgreen;
+}
+*/
+table {
+  border: 3px solid rgba(12, 60, 90, 0.952);
+  width: 100vw; }
+
+th {
+  background-image: linear-gradient(to right, rgba(12, 60, 90, 0.952), lightskyblue);
+  padding: 20px;
+  font-size: 32px;
+  color: beige; }
+
+tr, td {
+  border: 2px solid rgba(12, 60, 90, 0.952); }
+
+#services ul {
+  padding-left: 30px; }
+
+#services td, li {
+  color: rgba(12, 60, 90, 0.952); }
+
+/*Section Contact*/
+#contact {
+  height: 700px;
+  /*overflow: auto;*/ }
+
+#contactForm {
+  border: 3px solid rgba(12, 60, 90, 0.952);
+  padding: 7px; }
+
+/* "Blog" */
+#blog {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "articulo1 articulo1 aside1" "aside2 articulo2 articulo2" "articulo3 articulo3 aside3";
+  grid-template-rows: 10% 25% 25% 25%;
+  grid-template-columns: 20% 43% 20%;
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  /*justify-items: center;*/
+  /*align-items: center; ** Para alinear la grilla (hijo único) usamos "content" a diferencia de 
+                            "Flex" que solo lo usamos en caso de contener hijos multiples ** */
+  /*height: 85%;
+    width: 83%; ** Height y Width lo "heredan" del "Main" y no hacia falta modificarlos
+                    para poder centrar el "grid" ** */
+  /*border: 2px solid red;*/ }
+
+.encabezados {
+  grid-area: titulo;
+  /*border: 1px solid yellowgreen;*/ }
+
+#art1 {
+  grid-area: articulo1;
+  /*border: 1px solid violet;*/ }
+
+#art2 {
+  grid-area: articulo2;
+  /*border: 1px solid violet;*/ }
+
+#art3 {
+  grid-area: articulo3;
+  /*border: 1px solid violet;*/ }
+
+#as1 {
+  grid-area: aside1;
+  /*border: 1px solid blue;*/ }
+
+#as2 {
+  grid-area: aside2;
+  /*border: 1px solid blue;*/ }
+
+#as3 {
+  grid-area: aside3;
+  /*border: 1px solid blue;*/ }
+
+#art1, #art2, #art3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  border: 1px solid rgba(12, 60, 90, 0.952);
+  box-shadow: 0px 1px 5px 0px lightskyblue;
+  border-radius: 10px;
+  color: rgba(12, 60, 90, 0.952); }
+
+.margRight {
+  margin-right: 5px; }
+
+.margLeft {
+  margin-left: 5px; }
+
+.imgSize {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; }
+
+#blog article:hover {
+  transition: 1.5s;
+  background-color: rgba(12, 60, 90, 0.952);
+  color: beige; }
+
+.imgSize:hover {
+  /*transform:scale(1.1,1.1);
+    transition: 1.5s;*/
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in; }
+
+@keyframes scale {
+  25% {
+    transform: scale(1.1, 1.1); } }
+
+/*MQuery para Mobile*/
+@media (max-width: 600px) {
+  header {
+    display: none; }
+  #menuMobile {
+    display: block; }
+  #badgeMotto {
+    width: 95vw;
+    /*margin-top: 20px;*/ }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+  #inst {
+    display: none; }
+  .soMe {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 35px; }
+  .soMe__iconSoMe {
+    margin-right: 30px; }
+  #services {
+    height: 850px; }
+  iframe {
+    height: 400px; } }

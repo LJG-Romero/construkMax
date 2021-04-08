@@ -1,0 +1,46 @@
+/*MQuery para Mobile*/
+@media (max-width: 600px) {
+    #home{
+        height: 60vh;
+        #badgeMotto {
+            width: 95vw;
+            height: 50px;
+            /*margin-top: 20px;*/
+            .motto{
+                font-size: 2.5rem;
+            }
+        } 
+    }
+    header {
+        display: none;
+    }
+    #menuMobile {
+        display: block;
+    }
+          
+    footer {
+        display: flex;
+        flex-direction: column-reverse;        
+        align-items: center;       
+    }
+    #inst {
+        display: none;
+    }
+    .soMe {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 35px;
+    }
+    .soMe__iconSoMe{
+        
+        margin-right: 30px;
+    }
+    #services {
+        height: 850px;
+    }
+    iframe {        
+        height: 400px;
+    }
+}  

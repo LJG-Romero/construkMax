@@ -1,0 +1,55 @@
+
+/* Home */
+#home {    
+    height: 800px;
+    width: 100vw; 
+    margin: 1px 0px;
+    /*background-image: url("imagenes/construc5.jpeg");*/
+    background-image: url("../imagenes/construc5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*position: absolute;*/
+    /*opacity: 0.7;*/
+}
+#badgeMotto {
+    width: 60vw;
+    height: 70px;
+    border-radius: 10px;
+    margin: 20px;
+    /*border: 1px solid blue;*/
+    
+
+    
+    /*border: 2px solid yellowgreen;*/
+}
+#badgeMotto:hover {
+    background-color: beige;
+    opacity: 0.7;
+}
+.motto {
+    color: beige;
+    font-size: 3.5rem;
+    text-align: center;    
+    height: 50px;
+    margin-top: 5px;
+    
+    /*border: 1px solid red;*/
+    /*font-style: italic;*/
+    
+    /*padding: 27px;*/
+    /*position: relative;*/ /*Solo en casos que haya dos elementos que 
+                            necesitemos superponerlos. En caso de usar
+                            "img" como "background" o un "item hijo" no hace 
+                            falta. En esos casos usamos "opacity"*/
+    /*z-index: 1000;*/
+}
+#badgeMotto:hover .motto{
+    color: rgb(36, 102, 124);
+    
+}

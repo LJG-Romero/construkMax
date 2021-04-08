@@ -1,0 +1,94 @@
+/* "Blog" */
+#blog {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "articulo1 articulo1 aside1"
+    "aside2 articulo2 articulo2"
+    "articulo3 articulo3 aside3";
+    grid-template-rows: 10% 25% 25% 25%;
+    grid-template-columns: 20% 43% 20%;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    /*justify-items: center;*/
+    /*align-items: center; ** Para alinear la grilla (hijo único) usamos "content" a diferencia de 
+                            "Flex" que solo lo usamos en caso de contener hijos multiples ** */ 
+    /*height: 85%;
+    width: 83%; ** Height y Width lo "heredan" del "Main" y no hacia falta modificarlos
+                    para poder centrar el "grid" ** */
+    /*border: 2px solid red;*/
+}
+.encabezados {
+    grid-area: titulo;
+    /*border: 1px solid yellowgreen;*/    
+}
+#art1 {
+    grid-area: articulo1;
+    /*border: 1px solid violet;*/     
+}
+#art2 {
+    grid-area: articulo2;
+    /*border: 1px solid violet;*/    
+}
+#art3 {
+    grid-area: articulo3;
+    /*border: 1px solid violet;*/    
+}
+#as1 {
+    grid-area: aside1;
+    /*border: 1px solid blue;*/    
+}
+#as2 {
+    grid-area: aside2;
+    /*border: 1px solid blue;*/    
+}
+#as3 {
+    grid-area: aside3;
+    /*border: 1px solid blue;*/    
+}
+#art1, #art2, #art3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    border: 1px solid wheat;
+    box-shadow: 0px 1px 5px 0px lightskyblue;
+    border-radius: 10px; 
+    color: rgba(12, 60, 90, 0.952);
+    background-color: beige;
+    
+}
+.margRight {
+    margin-right: 5px;
+}
+.margLeft {
+    margin-left: 5px;
+}
+.imgSize {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#blog article:hover {    
+    transition: 1.5s;
+    background-color: rgba(12, 60, 90, 0.952);
+    border: 1px solid rgb(12, 60, 90);
+    color: white;
+}
+
+.imgSize:hover {
+    /*transform:scale(1.1,1.1);
+    transition: 1.5s;*/
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+
+}
+@keyframes scale {    
+    25% {
+        transform: scale(1.1,1.1);
+    }
+}

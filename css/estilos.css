@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: 0;
   font-family: sans-serif;
   font-weight: normal; }
 
@@ -25,65 +26,87 @@ header {
   background-color: rgba(12, 60, 90, 0.952);
   border-bottom: 3px solid #0c3c5a;
   box-shadow: 0px 1px 5px 0px #0c3c5a;
-  border-radius: 3.5px;
-  /*height: 20vh;*/
+  border: 1px solid red;
+  /*border-radius: 3.5px;*/
+  height: 20vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   /*margin-bottom: 0 !important;*/ }
 
-#logoDesktop {
-  height: 20vh;
-  width: 12.5vw; }
-  #logoDesktop img {
+.logo {
+  height: 100%;
+  width: 12.5vw;
+  border: 1px solid yellow; }
+  .logo .logo__Img {
     height: 100%;
     width: 100%; }
 
 /**/
-#menuDesktop {
+.menuDesktop {
+  height: 50px;
   width: 87.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  border: 1px solid yellow;
+  /*display: flex;
+    flex-direction: row;
+    justify-content: center;*/
   /*margin-bottom: 0px !important;*/
   line-height: normal; }
-  #menuDesktop ul {
-    width: 50vw;
+  .menuDesktop .menuDesktop__Bar {
+    height: 100%;
+    /*width: 50vw;*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 0px;
     padding-left: 0px; }
-    #menuDesktop ul li {
+    .menuDesktop .menuDesktop__Bar li {
       list-style-type: none;
-      width: 95px;
+      height: 70%;
+      width: 200px;
+      font-size: 25px;
+      text-align: center;
       padding: 5px 10px;
-      box-shadow: 0px 0px 2px 0px lightskyblue;
-      background-color: beige;
-      border: 1px solid #0c3c5a;
-      border-radius: 10px;
+      /*box-shadow: 0px 0px 2px 0px lightskyblue;     
+            background-color: beige;  
+            border: 1px solid rgb(12, 60, 90);
+            border-radius: 10px;*/
       box-sizing: initial;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      #menuDesktop ul li a {
+      transition: 0.7s;
+      transition-timing-function: ease-in;
+      /*    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;*/ }
+      .menuDesktop .menuDesktop__Bar li a {
         text-decoration: none;
-        color: rgba(12, 60, 90, 0.952); }
+        color: white;
+        transition: 1s;
+        transition-timing-function: ease-in; }
 
-#menuDesktop li:hover {
-  background-color: #becfe5;
+.menuDesktop__Bar li:hover {
+  background-color: beige;
+  border-radius: 10px;
+  box-shadow: 4px 2px 3px midnightblue;
   /*border: 1px solid rgb(12, 60, 90);*/
-  transition: 0.5s;
-  text-transform: uppercase; }
+  transition: 0.7s;
+  text-transform: uppercase;
+  width: 250px;
+  transition-timing-function: ease-in; }
 
-/*rgb(190, 207, 229)*/
+.menuDesktop__Bar li:hover a {
+  color: #24667c;
+  transition: 1s;
+  transition-timing-function: ease-in; }
+
 /**/
 #menuMobile {
   display: none;
   background-color: rgba(12, 60, 90, 0.952);
-  border-bottom: 3px solid #0c3c5a;
-  border-radius: 3px; }
+  border-bottom: 3px solid #0c3c5a; }
 
 #menuMobile ul {
   /*display: flex;
@@ -102,13 +125,17 @@ header {
       #menuMobile ul li ul li {
         background-color: beige;
         padding: 3px;
+        transition: 1s;
+        transition-timing-function: ease-in;
         /*list-style-type: none;*/
         /*margin: 1px;*/ }
         #menuMobile ul li ul li a {
           text-decoration: none;
           color: #24667c;
           border-radius: 5px;
-          padding: 3px; }
+          padding: 3px;
+          transition: 0.5s;
+          transition-timing-function: ease-in; }
 
 #menuMobile ul li:hover ul {
   display: block;
@@ -118,11 +145,35 @@ header {
 #menuMobile ul li ul li a:hover {
   background-color: #becfe5;
   transition: 0.5s;
+  transition-timing-function: ease-in;
   text-transform: uppercase; }
 
 .imgLogo {
   height: 20vh;
   width: 30vw; }
+
+/*Encabezado*/
+.encabezado {
+  height: 400px;
+  border: 1px solid yellowgreen;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.encabezado__Back {
+  height: 100%;
+  width: 100vw;
+  border: 1px solid red;
+  opacity: 0.7; }
+
+.encabezado__Front {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid violet;
+  font-size: 50px;
+  font-weight: normal; }
 
 /* Footer */
 footer {
@@ -228,33 +279,32 @@ footer {
 #badgeMotto:hover .motto {
   color: #24667c; }
 
-/* "Servicios" */
-#services {
-  height: 1500px;
-  border: 1px solid violet; }
-
-/*Encabezado*/
-.encabezado {
-  height: 400px;
-  border: 1px solid yellowgreen;
-  position: relative;
+.us {
+  width: 70vw;
+  height: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  margin: 70px; }
+  .us .us__Aside {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 10px; }
+    .us .us__Aside p {
+      border: 1px solid lightgray;
+      padding: 10px;
+      margin: 10px; }
+    .us .us__Aside img {
+      height: 100%;
+      width: auto;
+      border-radius: 10px; }
 
-.encabezado__Back {
-  height: 100%;
-  width: 100vw;
-  border: 1px solid red;
-  opacity: 0.7; }
-
-.encabezado__Front {
-  position: absolute;
-  z-index: 1;
-  border: 1px solid violet;
-  font-size: 50px;
-  font-weight: normal; }
+/* "Servicios" */
+#services {
+  height: 1300px;
+  border: 1px solid violet; }
 
 /*Servicios*/
 .serv {
@@ -321,7 +371,7 @@ footer {
 
 /*Section Contact*/
 #contact {
-  height: 700px;
+  height: 1200px;
   /*overflow: auto;*/ }
 
 #contactForm {

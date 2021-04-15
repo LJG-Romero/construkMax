@@ -13,11 +13,13 @@
 
 <body>
     <header>
-        <div id="logoDesktop">
-            <a href="index.html"><img src="imagenes/logo.jpeg" alt="Logo Construk-Max"></a>
+        <div class="logo">
+            <a href="index.html"><img class="logo__Img" src="imagenes/logo3.jpeg" alt="Logo Construk-Max"></a>
+            <!--
+            <img src="imagenes/logo.jpeg" alt="Logo Construk-Max">-->
         </div>
-        <nav id="menuDesktop">   
-            <ul>                
+        <nav class="menuDesktop">   
+            <ul class="menuDesktop__Bar">                
                 <li> <a href="index.html">Home</a> </li>                
                 <li> <a href="knowUs.html">Nosotros</a> </li>
                 <li> <a href="services.html">Servicios</a> </li>
@@ -40,18 +42,24 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Nosotros</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-             Aperiam molestiae numquam sapiente nam fugit. Dignissimos 
-             quibusdam rerum tempore reprehenderit necessitatibus, 
-             deserunt, molestias suscipit accusantium officiis alias 
-             earum. Molestiae, fuga accusamus?</p>
-        </section>
-        <aside>
-            <p>Imagen del profesional acompañando la descripción (posicionamiento lateral)</p>
-        </aside>
-        <br>
+        <div class="encabezado">
+            <img class="encabezado__Back" src="imagenes/construc8.jpeg" alt="">
+            <h1 class="encabezado__Front">Nosotros</h1>
+        </div>
+        <div class="us">
+            <aside class="us__Aside">
+            <p>Construk-Max nace en 2005 de la mano del Ingeniero Romero como un emprendiemiento familar.
+            El ingeniero Romero egresó de la universidad nacional de Córdoba en 1989 y desde entonces ha forjado su pasión por la construcción.
+            </p>
+            <p>Durante todos estos años el emprendimiento siempre ha tenido un horizonte claro, ayudar a las familias que confían en nosotros a concretar el sueño de la casa propia.
+            El compromiso es con vos.
+            </p>
+            </aside>
+            <aside class="us__Aside" >            
+                <img src="imagenes/construc9.jpeg" alt="">
+            </aside>
+        </div>
+
         
     </main>
     <footer>  

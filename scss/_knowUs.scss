@@ -1,0 +1,28 @@
+.us {
+    width: 70vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 70px;
+
+    .us__Aside{
+        width: 50%;
+        height: 400px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        margin: 10px;
+        p{
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        img {
+            height: 100%;
+            width: auto;
+            border-radius: 10px;
+        }
+
+    }
+
+}

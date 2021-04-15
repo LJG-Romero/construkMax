@@ -15,11 +15,13 @@
 </head>
 <body>
     <header>
-        <div id="logoDesktop">
-            <a href="index.html"><img src="imagenes/logo.jpeg" alt="Logo Construk-Max"></a>
+        <div class="logo">
+            <a href="index.html"><img class="logo__Img" src="imagenes/logo3.jpeg" alt="Logo Construk-Max"></a>
+            <!--
+            <img src="imagenes/logo.jpeg" alt="Logo Construk-Max">-->
         </div>
-        <nav id="menuDesktop">   
-            <ul>                
+        <nav class="menuDesktop">   
+            <ul class="menuDesktop__Bar">                
                 <li> <a href="index.html">Home</a> </li>                
                 <li> <a href="knowUs.html">Nosotros</a> </li>
                 <li> <a href="services.html">Servicios</a> </li>
@@ -42,8 +44,12 @@
         </ul>
     </nav>
     <main id="contact">
-        <h2>Contacto</h2>
-        <h3>Estamos para ayudarte</h3>
+        <div class="encabezado">
+            <img class="encabezado__Back" src="imagenes/construc16.jpeg" alt="">
+            <h1 class="encabezado__Front">Contacto</h1>
+        </div>
+        
+        
         <p>Completá el siguiente formulario y nos pondremos en contacto con usted a la brevedad</p>
         <legend>Formulario de Contacto</legend>
         <form class="form-inline" id="contactForm">

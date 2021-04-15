@@ -1,32 +1,10 @@
 /* "Servicios" */
 #services {
-    height: 1500px;
+    height: 1300px;
     border: 1px solid violet;
 }
 
-/*Encabezado*/
-.encabezado{
-    height: 400px;
-    border: 1px solid yellowgreen;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.encabezado__Back{
-    height: 100%;
-    width: 100vw;
-    border: 1px solid red;
-    opacity: 0.7;
-}
-.encabezado__Front{
-    position: absolute;
-    z-index: 1;
-    border: 1px solid violet;
-    font-size: 50px;
-    font-weight: normal;
-}
+
 
 
 /*Servicios*/

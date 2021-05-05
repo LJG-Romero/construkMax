@@ -11,46 +11,32 @@
     grid-template-columns: 20% 43% 20%;
     grid-row-gap: 10px;
     justify-content: center;
-    align-content: center;
-    /*justify-items: center;*/
-    /*align-items: center; ** Para alinear la grilla (hijo único) usamos "content" a diferencia de 
-                            "Flex" que solo lo usamos en caso de contener hijos multiples ** */ 
-    /*height: 85%;
-    width: 83%; ** Height y Width lo "heredan" del "Main" y no hacia falta modificarlos
-                    para poder centrar el "grid" ** */
-    border: 2px solid red;
+    align-content: center;    
+    
     p{
-        border: 1px solid red;
         text-align: justify;
     }
 }
 .encabezados {
-    grid-area: titulo;
-    /*border: 1px solid yellowgreen;*/    
+    grid-area: titulo;    
 }
 #art1 {
-    grid-area: articulo1;
-    /*border: 1px solid violet;*/     
+    grid-area: articulo1;     
 }
 #art2 {
-    grid-area: articulo2;
-    /*border: 1px solid violet;*/    
+    grid-area: articulo2;    
 }
 #art3 {
-    grid-area: articulo3;
-    /*border: 1px solid violet;*/    
+    grid-area: articulo3;    
 }
 #as1 {
-    grid-area: aside1;
-    /*border: 1px solid blue;*/    
+    grid-area: aside1;   
 }
 #as2 {
-    grid-area: aside2;
-    /*border: 1px solid blue;*/    
+    grid-area: aside2;    
 }
 #as3 {
-    grid-area: aside3;
-    /*border: 1px solid blue;*/    
+    grid-area: aside3;    
 }
 #art1, #art2, #art3 {
     display: flex;
@@ -88,8 +74,6 @@
 }
 
 .imgSize:hover {
-    /*transform:scale(1.1,1.1);
-    transition: 1.5s;*/
     animation-name: scale;
     animation-duration: 2s;
     animation-delay: 0s;

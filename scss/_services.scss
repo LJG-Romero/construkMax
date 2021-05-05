@@ -1,28 +1,25 @@
 /* "Servicios" */
 #services {
-    height: 1170px;
-    border: 1px solid violet;
+    height: 1170px;    
 }
 .serv{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 50px;
-    border: 1px solid blue;
+    margin-top: 50px;    
 }
 .serv__Rows{
     height: 350px;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border: 1px solid red;
+    justify-content: space-around;    
 }
 .serv__Rows--Items{
     height: 200px;
     width: 300px;
-    border: 1px solid yellowgreen;
-    box-shadow: 1px 1px 5px midnightblue;
+    
+    box-shadow: 1px 1px 5px rgba(12, 60, 90, 0.952);
     border-radius: 10px;
     
     position: relative;    
@@ -58,7 +55,7 @@
     top: 21%;
     left: 20%;
     font-size: 25px;
-    //border: 1px solid red;
+
     font-weight: normal;
     border-bottom: 1px solid rgba(12, 60, 90, 0.952);
     color: rgba(12, 60, 90, 0.952);
@@ -73,11 +70,9 @@
 .it--List{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    border: 1px solid red;
+    justify-content: left;    
 }
-.it--List ul{
-    border: 1px solid orange;
+.it--List ul{    
     margin-left: 25px;
     li{
         color: rgba(12, 60, 90, 0.952);

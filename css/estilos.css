@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* General */
 * {
   margin: 0;
@@ -24,22 +23,17 @@ body {
 /* Header */
 header {
   background-color: rgba(12, 60, 90, 0.952);
-  border-bottom: 3px solid #0c3c5a;
   box-shadow: 0px 1px 5px 0px #0c3c5a;
-  border: 1px solid red;
-  /*border-radius: 3.5px;*/
   height: 20vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  /*margin-bottom: 0 !important;*/ }
+  align-items: center; }
 
 .logo {
   height: 100%;
-  width: 12.5vw;
-  border: 1px solid yellow; }
+  width: 12.5vw; }
   .logo .logo__Img {
     height: 100%;
     width: 100%; }
@@ -48,15 +42,9 @@ header {
 .menuDesktop {
   height: 50px;
   width: 87.5vw;
-  border: 1px solid yellow;
-  /*display: flex;
-    flex-direction: row;
-    justify-content: center;*/
-  /*margin-bottom: 0px !important;*/
   line-height: normal; }
   .menuDesktop .menuDesktop__Bar {
     height: 100%;
-    /*width: 50vw;*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -70,17 +58,9 @@ header {
       font-size: 25px;
       text-align: center;
       padding: 5px 10px;
-      /*box-shadow: 0px 0px 2px 0px lightskyblue;     
-            background-color: beige;  
-            border: 1px solid rgb(12, 60, 90);
-            border-radius: 10px;*/
       box-sizing: initial;
       transition: 0.7s;
-      transition-timing-function: ease-in;
-      /*    
-            display: flex;
-            flex-direction: row;
-            justify-content: center;*/ }
+      transition-timing-function: ease-in; }
       .menuDesktop .menuDesktop__Bar li a {
         text-decoration: none;
         color: white;
@@ -90,8 +70,7 @@ header {
 .menuDesktop__Bar li:hover {
   background-color: beige;
   border-radius: 10px;
-  box-shadow: 4px 2px 3px midnightblue;
-  /*border: 1px solid rgb(12, 60, 90);*/
+  box-shadow: 3px 2px 3px midnightblue;
   transition: 0.7s;
   text-transform: uppercase;
   width: 250px;
@@ -106,29 +85,21 @@ header {
 #menuMobile {
   display: none;
   background-color: rgba(12, 60, 90, 0.952);
-  border-bottom: 3px solid #0c3c5a; }
+  box-shadow: 0px 1px 5px 0px #0c3c5a; }
 
 #menuMobile ul {
-  /*display: flex;
-    flex-direction: row;
-    justify-content: center;*/
   margin-bottom: 0px;
   padding-left: 0px; }
   #menuMobile ul li {
     list-style-type: none;
-    text-align: center;
-    /*display: flex;
-        flex-direction: column;
-        justify-content: center;*/ }
+    text-align: center; }
     #menuMobile ul li ul {
       display: none; }
       #menuMobile ul li ul li {
         background-color: beige;
         padding: 3px;
         transition: 1s;
-        transition-timing-function: ease-in;
-        /*list-style-type: none;*/
-        /*margin: 1px;*/ }
+        transition-timing-function: ease-in; }
         #menuMobile ul li ul li a {
           text-decoration: none;
           color: #24667c;
@@ -138,9 +109,7 @@ header {
           transition-timing-function: ease-in; }
 
 #menuMobile ul li:hover ul {
-  display: block;
-  /*border-bottom: 3px solid wheat;*/
-  /*border-radius: 3px;*/ }
+  display: block; }
 
 #menuMobile ul li ul li a:hover {
   background-color: #becfe5;
@@ -155,7 +124,6 @@ header {
 /*Encabezado*/
 .encabezado {
   height: 400px;
-  border: 1px solid yellowgreen;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -214,12 +182,9 @@ footer {
   align-items: center; }
 
 .soMe__iconSoMe img {
-  height: 27px;
-  /*width: 70px;*/ }
+  height: 27px; }
 
 .soMe__iconSoMe img:hover {
-  /*filter: drop-shadow(0px 0px 3px darkblue);   */
-  /*background-color: red;*/
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); }
 
 #copyRight {
@@ -239,7 +204,6 @@ footer {
   height: 800px;
   width: 100vw;
   margin: 1px 0px;
-  /*background-image: url("imagenes/construc5.jpeg");*/
   background-image: url("../imagenes/construc5.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,17 +212,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  /*position: absolute;*/
-  /*opacity: 0.7;*/ }
+  align-items: center; }
 
 #badgeMotto {
   width: 60vw;
   height: 70px;
   border-radius: 10px;
-  margin: 20px;
-  /*border: 1px solid blue;*/
-  /*border: 2px solid yellowgreen;*/ }
+  margin: 20px; }
 
 #badgeMotto:hover {
   background-color: beige;
@@ -267,18 +227,10 @@ footer {
 .motto {
   color: beige;
   font-size: 3.5rem;
+  font-weight: normal;
   text-align: center;
   height: 50px;
-  margin-top: 5px;
-  /*border: 1px solid red;*/
-  /*font-style: italic;*/
-  /*padding: 27px;*/
-  /*position: relative;*/
-  /*Solo en casos que haya dos elementos que 
-                            necesitemos superponerlos. En caso de usar
-                            "img" como "background" o un "item hijo" no hace 
-                            falta. En esos casos usamos "opacity"*/
-  /*z-index: 1000;*/ }
+  margin-top: 5px; }
 
 #badgeMotto:hover .motto {
   color: #24667c; }
@@ -290,13 +242,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 70px;
-  border: 1px solid red; }
+  margin: 0 70px; }
   .us .us__Aside {
     width: 40%;
     height: 600px;
     border-radius: 10px;
-    border: 1px solid grey;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -317,29 +267,25 @@ footer {
 
 /* "Servicios" */
 #services {
-  height: 1170px;
-  border: 1px solid violet; }
+  height: 1170px; }
 
 .serv {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 50px;
-  border: 1px solid blue; }
+  margin-top: 50px; }
 
 .serv__Rows {
   height: 350px;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  border: 1px solid red; }
+  justify-content: space-around; }
 
 .serv__Rows--Items {
   height: 200px;
   width: 300px;
-  border: 1px solid yellowgreen;
-  box-shadow: 1px 1px 5px midnightblue;
+  box-shadow: 1px 1px 5px rgba(12, 60, 90, 0.952);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -382,19 +328,16 @@ footer {
 .it--List {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  border: 1px solid red; }
+  justify-content: left; }
 
 .it--List ul {
-  border: 1px solid orange;
   margin-left: 25px; }
   .it--List ul li {
     color: rgba(12, 60, 90, 0.952); }
 
 /*Section Contact*/
 #contact {
-  height: 1000px;
-  /*overflow: auto;*/ }
+  height: 1000px; }
 
 .form {
   display: flex;
@@ -429,45 +372,30 @@ footer {
   grid-template-columns: 20% 43% 20%;
   grid-row-gap: 10px;
   justify-content: center;
-  align-content: center;
-  /*justify-items: center;*/
-  /*align-items: center; ** Para alinear la grilla (hijo único) usamos "content" a diferencia de 
-                            "Flex" que solo lo usamos en caso de contener hijos multiples ** */
-  /*height: 85%;
-    width: 83%; ** Height y Width lo "heredan" del "Main" y no hacia falta modificarlos
-                    para poder centrar el "grid" ** */
-  border: 2px solid red; }
+  align-content: center; }
   .blog__Grid p {
-    border: 1px solid red;
     text-align: justify; }
 
 .encabezados {
-  grid-area: titulo;
-  /*border: 1px solid yellowgreen;*/ }
+  grid-area: titulo; }
 
 #art1 {
-  grid-area: articulo1;
-  /*border: 1px solid violet;*/ }
+  grid-area: articulo1; }
 
 #art2 {
-  grid-area: articulo2;
-  /*border: 1px solid violet;*/ }
+  grid-area: articulo2; }
 
 #art3 {
-  grid-area: articulo3;
-  /*border: 1px solid violet;*/ }
+  grid-area: articulo3; }
 
 #as1 {
-  grid-area: aside1;
-  /*border: 1px solid blue;*/ }
+  grid-area: aside1; }
 
 #as2 {
-  grid-area: aside2;
-  /*border: 1px solid blue;*/ }
+  grid-area: aside2; }
 
 #as3 {
-  grid-area: aside3;
-  /*border: 1px solid blue;*/ }
+  grid-area: aside3; }
 
 #art1, #art2, #art3 {
   display: flex;
@@ -501,8 +429,6 @@ footer {
   color: white; }
 
 .imgSize:hover {
-  /*transform:scale(1.1,1.1);
-    transition: 1.5s;*/
   animation-name: scale;
   animation-duration: 2s;
   animation-delay: 0s;
@@ -518,8 +444,7 @@ footer {
     height: 60vh; }
     #home #badgeMotto {
       width: 95vw;
-      height: 50px;
-      /*margin-top: 20px;*/ }
+      height: 50px; }
       #home #badgeMotto .motto {
         font-size: 2.5rem; }
   header {
@@ -528,19 +453,56 @@ footer {
     display: block; }
   .us {
     display: block;
-    margin: 30px 30px;
-    height: 1300px; }
-  .us__Aside {
-    width: 1000px;
-    height: 500px; }
-    .us__Aside p {
-      width: 100%;
-      margin: 10px 0px;
-      border: 1px solid red; }
-    .us__Aside .boxImg img {
+    margin: 0px;
+    height: 920px;
+    width: 100vw; }
+    .us .us__Aside {
       width: 100%;
       height: 400px;
-      border: 1px solid red; }
+      display: block; }
+      .us .us__Aside p {
+        width: 90%;
+        margin: 12px;
+        padding: 15px;
+        font-size: 20px; }
+      .us .us__Aside img {
+        height: 100%;
+        width: 95%;
+        border-radius: 10px;
+        margin: 0px 12px; }
+    .us .boxImg {
+      height: 500px;
+      width: 100%; }
+  .serv__Rows--Items {
+    padding: 0px 5px; }
+  .serv__Rows--Items:hover {
+    height: 330px;
+    transform: scale(1);
+    transition: 1s;
+    transition-timing-function: ease-in; }
+  #contact {
+    height: 1470px; }
+  .form {
+    display: block;
+    width: 100vw;
+    height: 1070px;
+    padding: 0px; }
+    .form #contactForm {
+      border-radius: 10px;
+      padding: 20px;
+      background-color: beige;
+      box-shadow: 1px 1px 5px wheat;
+      width: 90%;
+      height: 500px;
+      margin: 25px; }
+    .form .form--Map {
+      border-radius: 10px;
+      width: 90%;
+      height: 500px;
+      opacity: 0.8;
+      margin: 0px 25px; }
+    .form .form--Map:hover {
+      opacity: 1; }
   footer {
     display: flex;
     flex-direction: column-reverse;

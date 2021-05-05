@@ -1,21 +1,16 @@
 /*Section Contact*/
 #contact {
     height: 1000px;
-    /*overflow: auto;*/
-    
 }
 .form{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
     width: 100vw;
     height: 600px;
-    padding: 30px;
-    //border: 1px solid red;
+    padding: 30px;    
 }
-#contactForm {
-    //border: 1px solid rgba(12, 60, 90, 0.952);
+#contactForm {    
     border-radius: 10px;
     padding: 30px;
     background-color: beige;
@@ -23,14 +18,12 @@
     width: 40%;
     height: 100%;
 }
-.form--Map{
-    
+.form--Map{    
     border-radius: 10px;
     width: 40%;
     height: 100%; 
     opacity: 0.8;   
 }
 .form--Map:hover{
-    opacity: 1;
-    
+    opacity: 1;    
 }

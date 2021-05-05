@@ -6,46 +6,32 @@
     justify-content: center;
     align-items: center;
     margin: 0 70px;
-    border: 1px solid red;
+    
 
     .us__Aside{
         width: 40%;
         height: 600px;
-        border-radius: 10px;
-        border: 1px solid grey;
+        border-radius: 10px;        
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;     
         
-        // margin: 10px;
         p{
-            // border: 1px solid lightgray;
             box-shadow: 1px 1px 5px wheat;
             border-radius: 10px;
             padding: 27px;
             margin: 0 20px;
             font-size: 25px;
-            text-align: justify;
-            
+            text-align: justify;            
             color: rgba(12, 60, 90, 0.952);
             background-color: beige;
-
         }
         img{
             height: 100%;
             border-radius: 10px;
-        }
-        
-        
-
+        }    
     }
     .boxImg {
-        width: 60%; 
-        
-        
-
-
-              
+        width: 60%;   
     }
-
 }

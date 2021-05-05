@@ -1,9 +1,36 @@
 /*Section Contact*/
 #contact {
-    height: 1200px;
+    height: 1000px;
     /*overflow: auto;*/
+    
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width: 100vw;
+    height: 600px;
+    padding: 30px;
+    //border: 1px solid red;
 }
 #contactForm {
-    border: 3px solid rgba(12, 60, 90, 0.952);
-    padding: 7px;
+    //border: 1px solid rgba(12, 60, 90, 0.952);
+    border-radius: 10px;
+    padding: 30px;
+    background-color: beige;
+    box-shadow: 1px 1px 5px wheat;
+    width: 40%;
+    height: 100%;
+}
+.form--Map{
+    
+    border-radius: 10px;
+    width: 40%;
+    height: 100%; 
+    opacity: 0.8;   
+}
+.form--Map:hover{
+    opacity: 1;
+    
 }

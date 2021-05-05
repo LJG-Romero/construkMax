@@ -1,5 +1,5 @@
 /* "Blog" */
-#blog {
+.blog__Grid {
     
     display: grid;
     grid-template-areas:
@@ -18,7 +18,11 @@
     /*height: 85%;
     width: 83%; ** Height y Width lo "heredan" del "Main" y no hacia falta modificarlos
                     para poder centrar el "grid" ** */
-    /*border: 2px solid red;*/
+    border: 2px solid red;
+    p{
+        border: 1px solid red;
+        text-align: justify;
+    }
 }
 .encabezados {
     grid-area: titulo;
@@ -58,10 +62,13 @@
     border-radius: 10px; 
     color: rgba(12, 60, 90, 0.952);
     background-color: beige;
+    transition: 1s;
+    transition-timing-function: ease-in;
     
 }
 .margRight {
     margin-right: 5px;
+    
 }
 .margLeft {
     margin-left: 5px;
@@ -73,7 +80,8 @@
 }
 
 #blog article:hover {    
-    transition: 1.5s;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
     background-color: rgba(12, 60, 90, 0.952);
     border: 1px solid rgb(12, 60, 90);
     color: white;

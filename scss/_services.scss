@@ -1,13 +1,8 @@
 /* "Servicios" */
 #services {
-    height: 1300px;
+    height: 1170px;
     border: 1px solid violet;
 }
-
-
-
-
-/*Servicios*/
 .serv{
     display: flex;
     flex-direction: column;
@@ -16,7 +11,7 @@
     border: 1px solid blue;
 }
 .serv__Rows{
-    height: 400px;
+    height: 350px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -37,7 +32,7 @@
 }
 
 .serv__Rows--Items:hover{
-    height: 400px;
+    height: 330px;
     transform: scale(1.1);
     transition: 1s;
     transition-timing-function: ease-in;
@@ -47,7 +42,7 @@
     height: 200px;
     width: 100%;
     border-radius: 10px;
-    opacity: 0.9;
+    opacity: 0.8;
     transition: 1s;
 }
 
@@ -61,11 +56,19 @@
 .it--Label{
     position: absolute;
     top: 21%;
-    left: 35%;
+    left: 20%;
     font-size: 25px;
-    border: 1px solid red;
+    //border: 1px solid red;
     font-weight: normal;
+    border-bottom: 1px solid rgba(12, 60, 90, 0.952);
+    color: rgba(12, 60, 90, 0.952);
     
+}
+.medSize{
+    left: 25%;
+}
+.smaSize{
+    left: 40%;
 }
 .it--List{
     display: flex;
@@ -75,5 +78,8 @@
 }
 .it--List ul{
     border: 1px solid orange;
-    margin-left: 15px;
+    margin-left: 25px;
+    li{
+        color: rgba(12, 60, 90, 0.952);
+    }
 }

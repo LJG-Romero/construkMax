@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: 0;
     font-family: sans-serif;
-    font-weight: normal;
+    //font-weight: normal;
 }
 h2,h3 {
     color: rgb(221, 116, 67);
-    text-align: center;    
+    text-align: center; 
+    font-weight: normal;   
+    //border: 1px solid red;
 }
 h2 {
     font-size: 1.5em;
@@ -216,15 +218,18 @@ header {
 .encabezado__Back{
     height: 100%;
     width: 100vw;
-    border: 1px solid red;
-    opacity: 0.7;
+    //border: 1px solid red;
+    opacity: 0.65;
 }
 .encabezado__Front{
     position: absolute;
     z-index: 1;
-    border: 1px solid violet;
-    font-size: 50px;
-    font-weight: normal;
+    //border: 1px solid violet;
+    font-size: 75px;
+    font-weight: lighter;
+    color: rgba(12, 60, 90, 0.952);
+    border-bottom: 1px solid rgba(12, 60, 90, 0.952);
+    //text-decoration: underline;
 }
 
 /* Footer */
@@ -236,7 +241,7 @@ footer {
     flex-direction: row;
     padding-top: 3px;
     border-top: 1px solid wheat;
-    box-shadow: 0px 0px 5px 0px lightskyblue;
+    box-shadow: 0px 0px 5px 0px wheat;    
     border-radius: 3.5px;
 }
 #inst {    
@@ -250,7 +255,7 @@ footer {
 }
 .logoCtcu img {
     height: 80%; 
-    width: 125px; 
+    width: auto; 
      
     margin-top: 15px;   
     border-right: 1px solid grey;  
@@ -290,5 +295,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;             
+    text-align: center;      
+    p{
+        margin-bottom: 0px;
+        line-height: normal;
+        color: black;
+    }       
 }
